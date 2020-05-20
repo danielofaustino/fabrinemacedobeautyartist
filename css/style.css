@@ -1,9 +1,71 @@
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+font-weight: 700;
+}
+
+.trocarimagem{
+    background-image: url('img/cursos/2.jpeg');
+}
+
+.trocarimagem:hover{
+    background-image: url('img/cursos/4.jpeg');
+}
+
+.showcase .showcase-text {
+    padding: 3rem;
+}
+
+.showcase .showcase-img {
+    min-height: 30rem;
+    background-size: cover;
+}
+.testimonials {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    color:#525b62;
+   
+}
+.testimonials h5{
+    color:#525b62;
+    text-shadow: 1px 1px 1px #92a1b1;
+}
+.testimonials h5:hover{
+    font-style: oblique;
+    text-shadow: 1px 1px 5px #606b75;
+}
+
+.testimonials .testimonial-item {
+    max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+    max-width: 12rem;
+    box-shadow: 0px 5px 5px 0px #adb5bd;
+
+}
+  
+  
+  
 
 #logo{
     padding-top: 1%;
     margin: 0; 
 }
+
+.imgprocedimento{
+    border-width: 10px;
+    border-color: white;
+}
+
 
 .social{
     
@@ -28,11 +90,27 @@
     height: 500px;
 }
 
-
+#gradient{
+    background-image: linear-gradient(#343a40, #4b535a);
+}
 
 #quemsomos{
-    padding-top: 2%;
+    background-image: linear-gradient(#343a40,#5d6770);
     
+    
+}
+
+
+#mapa{
+    background-color: dark;
+    
+}
+
+#rodape{
+    background-color: dark;
+    padding:5% 0 5% 0;
+    text-align: center;
+   
 }
 
 #bottom{
@@ -40,11 +118,7 @@
     padding-top: 2%;
 }
 
-#rodape{
-    padding:5% 0 5% 0;
-    text-align: center;
-    background-color: grey;
-}
+
 
 .navbar-expand-lg{
     justify-content: right;
@@ -75,7 +149,9 @@
 h5{
     padding-top: 1%;
 }
-
+.text-white{
+    text-align: center;
+}
 #cursospequeno{
     display: none;
 }
@@ -83,6 +159,24 @@ h5{
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+.fonteimagem{
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 20px;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fonteimagem2{
+    font-family: 'Playfair Display SC', serif;
+    padding-top: 1px;
+    color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
 p{
     font-family: 'Raleway', sans-serif;
 }
