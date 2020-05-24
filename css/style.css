@@ -53,7 +53,22 @@ font-weight: 700;
 
 }
   
-  
+.footerlink{
+    text-decoration: none;
+    color:white;
+}
+.footerlink:hover{
+    text-decoration: none;
+    color:white;
+}
+.footerlink:active{
+    text-decoration: none;
+    color:white;
+}
+.footerlink:visited{
+    text-decoration: none;
+    color:white;
+}
   
 
 #logo{
