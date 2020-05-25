@@ -13,13 +13,13 @@ font-weight: 700;
 }
 
 .carousel{
-margin-top: 6%;
+margin-top: 5.5%;
 }
 
 @media (max-width: 576px) { 
    
 .carousel{
-    margin-top: 20%;
+    margin-top: 19.5%;
 }    
 .mb-5{
     font-size: large;
