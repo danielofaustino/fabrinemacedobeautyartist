@@ -12,6 +12,34 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 700;
 }
 
+.carousel{
+margin-top: 6%;
+}
+
+@media (max-width: 576px) { 
+   
+.carousel{
+    margin-top: 20%;
+}    
+.mb-5{
+    font-size: large;
+}
+h2{
+    font-size: large;
+}
+.lead{
+    font-size: medium;
+}
+.testimonials {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color:#525b62;
+   
+}
+
+
+}
+
 .trocarimagem{
     background-image: url('img/cursos/2.jpeg');
 }
@@ -30,18 +58,19 @@ font-weight: 700;
 }
 .testimonials {
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     color:#525b62;
    
 }
 .testimonials h5{
     color:#525b62;
-    text-shadow: 1px 1px 1px #92a1b1;
+    
 }
 .testimonials h5:hover{
-    font-style: oblique;
-    text-shadow: 1px 1px 5px #606b75;
+  
+    text-shadow: 0px 1px 1px #92a1b1;
 }
+
 
 .testimonials .testimonial-item {
     max-width: 18rem;
