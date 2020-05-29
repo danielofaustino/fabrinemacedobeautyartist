@@ -40,6 +40,26 @@ h2{
 
 }
 
+@media (min-width: 1440px) { 
+   
+    .carousel{
+        margin-top: 5.5%;
+    }    
+  
+    
+    
+}
+
+ @media (min-width: 1920px) { 
+   
+        .carousel{
+            margin-top: 3.6%;
+        }    
+      
+        
+        
+}
+
 .trocarimagem{
     background-image: url('img/cursos/2.jpeg');
 }
