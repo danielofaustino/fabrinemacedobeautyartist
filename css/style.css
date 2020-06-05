@@ -12,11 +12,27 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 700;
 }
 
-
+legend{
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
 
 .modal-content{
     color:white;
 }
+.modal-body{
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+}
+.modal-body input{
+    background-color: #525b62;
+    color:white;
+}
+
+.modal-body input:hover{
+    background-color: #525b62;
+    color:white;
+}
+
 .form-control{
     background-color: #525b62;
 }
