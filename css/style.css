@@ -17,6 +17,9 @@ legend{
     font-weight: 300;
 }
 
+.close{
+    color:#fff;
+}
 .modal-content{
     color:white;
 }
