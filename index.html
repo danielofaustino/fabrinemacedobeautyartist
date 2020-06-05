@@ -227,10 +227,71 @@
                 <a class="footerlink" href="https://g.page/fabrinemacedobeautyartist?share" target="_blank"><h3 class="lead mb-0">Rua MMDC 450 - Sala 410 - Workstation, Butanta - São Paulo - SP</h3></a>
                 <a class="footerlink" href="https://wa.me/5511970433870" target="_blank"><h3 class="lead mb-0">11-97043-3870</h3></a>
                 <a class="footerlink" href="https://www.instagram.com/fabrinemacedobeautyartist/" target="_blank"><h3 class="lead mb-0">@fabrinemacedobeautyartist</h3></a>
+                <button type="button" class=" fixed_button btn btn-outline-light" data-toggle="modal" data-target="#exampleModal">
+                  Contato
+                </button>
               </div>
             </div>
           </div>
         </section>
+        
+  
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Contato</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSeDC6gPWoRdR3sJWXj_qSK3zz7CFyHJO7_SVpcMefRbDvWT-A/formResponse" target="_self" id="bootstrapForm" method="POST">
+
+                  <!-- Field type: "short" id: "418042345" -->
+                  <fieldset>
+                      <legend for="418042345">Nome:</legend>
+                      <div class="form-group">
+                          <input id="103493823" type="text" name="entry.103493823" class="form-control" required>
+                      </div>
+                  </fieldset>
+
+
+                  <!-- Field type: "short" id: "1060250881" -->
+                  <fieldset>
+                      <legend for="1060250881">Email:</legend>
+                      <div class="form-group">
+                          <input id="1327400938" type="text" name="entry.1327400938" class="form-control" required>
+                      </div>
+                  </fieldset>
+
+
+                  <!-- Field type: "short" id: "1063574981" -->
+                  <fieldset>
+                      <legend for="1063574981">Celular:</legend>
+                      <div class="form-group">
+                          <input id="459689156" type="text" name="entry.459689156" class="form-control" required>
+                      </div>
+                  </fieldset>
+
+                  <input type="hidden" name="fvv" value="1">
+                  <input type="hidden" name="fbzx" value="-8504708739442222225">
+                  <!--
+                      CAVEAT: In multipages (multisection) forms, *pageHistory* field tells to google what sections we've currently completed.
+                      This usually starts as "0" for the first page, then "0,1" in the second page... up to "0,1,2..N" in n-th page.
+                      Keep this in mind if you plan to change this code to recreate any sort of multipage-feature in your exported form.
+                      We're setting this to the total number of pages in this form because we're sending all fields from all the section together.
+                  -->
+                  <input type="hidden" name="pageHistory" value="0">
+
+                  <input class="btn btn-secondary" type="submit" data-dismiss="modal" value="WhatsApp">
+                </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
        
 
     </div>
@@ -240,6 +301,8 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js" integrity="sha256-2Pjr1OlpZMY6qesJM68t2v39t+lMLvxwpa8QlRjJroA=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

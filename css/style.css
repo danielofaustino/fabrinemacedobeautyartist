@@ -12,6 +12,15 @@ font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 font-weight: 700;
 }
 
+
+
+.modal-content{
+    color:white;
+}
+.form-control{
+    background-color: #525b62;
+}
+
 .carousel{
 margin-top: 5.5%;
 }
