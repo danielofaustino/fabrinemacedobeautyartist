@@ -126,6 +126,7 @@ h2{
 
 .testimonials .testimonial-item {
     max-width: 18rem;
+    cursor: pointer;
 }
 
 .testimonials .testimonial-item img {
