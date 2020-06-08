@@ -61,6 +61,7 @@ h2{
 }
 .lead{
     font-size: medium;
+    
 }
 .testimonials {
     padding-top: 1rem;
@@ -102,6 +103,7 @@ h2{
 
 .showcase .showcase-text {
     padding: 3rem;
+    text-align: justify;
 }
 
 .showcase .showcase-img {
