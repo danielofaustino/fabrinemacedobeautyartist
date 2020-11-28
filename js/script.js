@@ -45,7 +45,7 @@ const returnImg = (x) => {
 
     console.log(x.src)
 
-    let srcSliced = x.src.slice(0,42)
+    let srcSliced = x.src.slice(0,44)
     
     x.src = `${srcSliced}.jpeg`
     
