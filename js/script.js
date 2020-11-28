@@ -1,5 +1,5 @@
 
-
+// form on modal
 $('#contact').submit(function(e) {
     e.preventDefault();
   
@@ -9,75 +9,45 @@ $('#contact').submit(function(e) {
     });
   });
 
-$('#myModal').on('shown.bs.modal', function () {
+  $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').trigger('focus')
   })
 
-// CURSOS : 
 
-let trocandoImagem1 = (x) =>{
-    x.src="img/cursos/1-1.jpeg";
-}
 
-let voltandoImagem1 = (y) =>{
-    y.src="img/cursos/1.jpeg";
-}
+const changeImg = (x) => {
 
-let trocandoImagem2 = (x) =>{
-    x.src="img/cursos/2-2.jpeg";
-}
+    let replacement = x.src.substr(42,6)
 
-let voltandoImagem2 = (y) =>{
-    y.src="img/cursos/2.jpeg";
-}
+    let newReplacement = replacement.replace(replacement[0],`${replacement[0]}-${replacement[0]}`)
 
-let trocandoImagem3 = (x) =>{
-    x.src="img/cursos/3-3.jpeg";
-}
+    let newSrc = x.src.replace(replacement,newReplacement)
 
-let voltandoImagem3 = (y) =>{
-    y.src="img/cursos/3.jpeg";
-}
+    if(newSrc.includes("proced") == true){
 
-let trocandoImagem4 = (x) =>{
-    x.src="img/cursos/4-4.jpeg";
-}
+        x.src = newSrc
+        
 
-let voltandoImagem4 = (y) =>{
-    y.src="img/cursos/4.jpeg";
+    } else{
+
+        newSrc.replace("proced","cursos")
+
+        x.src = newSrc
+        
+    }
+    
+
 }
 
 
-// PROCEDIMENTOS
 
-let trocandoImagemP1 = (x) =>{
-    x.src="img/procedimentos/1-1.jpeg";
-}
+const returnImg = (x) => {
 
-let voltandoImagemP1 = (y) =>{
-    y.src="img/procedimentos/1.jpeg";
-}
+    console.log(x.src)
 
-let trocandoImagemP2 = (x) =>{
-    x.src="img/procedimentos/2-2.jpeg";
-}
-
-let voltandoImagemP2 = (y) =>{
-    y.src="img/procedimentos/2.jpeg";
-}
-
-let trocandoImagemP3 = (x) =>{
-    x.src="img/procedimentos/3-3.jpeg";
-}
-
-let voltandoImagemP3 = (y) =>{
-    y.src="img/procedimentos/3.jpeg";
-}
-
-let trocandoImagemP4 = (x) =>{
-    x.src="img/procedimentos/4-4.jpeg";
-}
-
-let voltandoImagemP4 = (y) =>{
-    y.src="img/procedimentos/4.jpeg";
+    let srcSliced = x.src.slice(0,42)
+    
+    x.src = `${srcSliced}.jpeg`
+    
+    console.log(x.src)
 }
