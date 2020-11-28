@@ -17,7 +17,7 @@ $('#contact').submit(function(e) {
 
 const changeImg = (x) => {
 
-    let replacement = x.src.substr(42,6)
+    let replacement = x.src.substr(43,6)
 
     let newReplacement = replacement.replace(replacement[0],`${replacement[0]}-${replacement[0]}`)
 
@@ -45,8 +45,8 @@ const returnImg = (x) => {
 
     console.log(x.src)
 
-    let srcSliced = x.src.slice(0,44)
-    
+    let srcSliced = x.src.slice(0,43)
+    console.log(srcSliced)
     x.src = `${srcSliced}.jpeg`
     
     console.log(x.src)
