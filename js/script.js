@@ -17,7 +17,7 @@ $('#contact').submit(function(e) {
 
 const changeImg = (x) => {
 
-    let replacement = x.src.substr(43,6)
+    let replacement = x.src.substr(44,6)
 
     let newReplacement = replacement.replace(replacement[0],`${replacement[0]}-${replacement[0]}`)
 
