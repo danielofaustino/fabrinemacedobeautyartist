@@ -1,4 +1,21 @@
 
+// Cookies alerts LGPD
+
+(() => {
+    if (!localStorage.pureJavaScriptCookies) {
+      document.querySelector(".box-cookies").classList.remove('hide');
+    }
+    
+    const acceptCookies = () => {
+      document.querySelector(".box-cookies").classList.add('hide');
+      localStorage.setItem("pureJavaScriptCookies", "accept");
+    };
+    
+    const btnCookies = document.querySelector(".btn-cookies");
+    
+    btnCookies.addEventListener('click', acceptCookies);
+  })();
+  
 // form on modal
 $('#contact').submit(function(e) {
     e.preventDefault();
@@ -51,3 +68,4 @@ const returnImg = (x) => {
     
     console.log(x.src)
 }
+
