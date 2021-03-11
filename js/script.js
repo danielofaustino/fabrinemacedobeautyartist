@@ -16,6 +16,7 @@
     btnCookies.addEventListener('click', acceptCookies);
   })();
   
+
 // form on modal
 $('#contact').submit(function(e) {
     e.preventDefault();
