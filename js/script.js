@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
     });
 
   window._ = new Glider(document.querySelector('.glider'), {
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     draggable: true,
     dots: '#dots',
@@ -59,8 +59,8 @@ window.addEventListener('load', function () {
       {
         breakpoint: 500,
         settings: {
-          slidesToScroll: 2,
-          slidesToShow: 2,
+          slidesToScroll: 1,
+          slidesToShow: 1,
           dots: false,
           arrows: false,
           scrollLock: true,
@@ -92,7 +92,7 @@ window.addEventListener('load', function () {
     });
 
   window._ = new Glider(document.querySelector('.glider-cursos'), {
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     draggable: true,
     dots: '#dots',
@@ -129,8 +129,8 @@ window.addEventListener('load', function () {
       {
         breakpoint: 500,
         settings: {
-          slidesToScroll: 2,
-          slidesToShow: 2,
+          slidesToScroll: 1,
+          slidesToShow: 1,
           dots: false,
           arrows: false,
           scrollLock: true,
