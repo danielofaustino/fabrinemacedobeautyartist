@@ -1,72 +1,155 @@
-
-// Cookies alerts LGPD
-
-(() => {
-    if (!localStorage.pureJavaScriptCookies) {
-      document.querySelector(".box-cookies").classList.remove('hide');
-    }
-    
-    const acceptCookies = () => {
-      document.querySelector(".box-cookies").classList.add('hide');
-      localStorage.setItem("pureJavaScriptCookies", "accept");
-    };
-    
-    const btnCookies = document.querySelector(".btn-cookies");
-    
-    btnCookies.addEventListener('click', acceptCookies);
-  })();
-  
-
-// form on modal
-$('#contact').submit(function(e) {
-    e.preventDefault();
-  
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-        window.location.href='www.google.com.br';
+window.addEventListener('load', function () {
+  document
+    .querySelector('.glider')
+    .addEventListener('glider-slide-visible', function (event) {
+      var glider = Glider(this);
+      console.log('Slide Visible %s', event.detail.slide);
     });
+  document
+    .querySelector('.glider')
+    .addEventListener('glider-slide-hidden', function (event) {
+      console.log('Slide Hidden %s', event.detail.slide);
+    });
+  document
+    .querySelector('.glider')
+    .addEventListener('glider-refresh', function (event) {
+      console.log('Refresh');
+    });
+  document
+    .querySelector('.glider')
+    .addEventListener('glider-loaded', function (event) {
+      console.log('Loaded');
+    });
+
+  window._ = new Glider(document.querySelector('.glider'), {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: '#dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next',
+    },
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToScroll: 'auto',
+          itemWidth: 300,
+          slidesToShow: 'auto',
+          exactWidth: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToScroll: 4,
+          slidesToShow: 4,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToScroll: 3,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToScroll: 2,
+          slidesToShow: 2,
+          dots: false,
+          arrows: false,
+          scrollLock: true,
+        },
+      },
+    ],
   });
 
-  $('#myModal').on('shown.bs.modal', function () {
-    $('#myInput').trigger('focus')
-  })
+  document
+    .querySelector('.glider-cursos')
+    .addEventListener('glider-slide-visible', function (event) {
+      var glider = Glider(this);
+      console.log('Slide Visible %s', event.detail.slide);
+    });
+  document
+    .querySelector('.glider-cursos')
+    .addEventListener('glider-slide-hidden', function (event) {
+      console.log('Slide Hidden %s', event.detail.slide);
+    });
+  document
+    .querySelector('.glider-cursos')
+    .addEventListener('glider-refresh', function (event) {
+      console.log('Refresh');
+    });
+  document
+    .querySelector('.glider-cursos')
+    .addEventListener('glider-loaded', function (event) {
+      console.log('Loaded');
+    });
 
+  window._ = new Glider(document.querySelector('.glider-cursos'), {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    draggable: true,
+    dots: '#dots',
+    arrows: {
+      prev: '.glider-prev',
+      next: '.glider-next',
+    },
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToScroll: 'auto',
+          itemWidth: 300,
+          slidesToShow: 'auto',
+          exactWidth: true,
+        },
+      },
+      {
+        breakpoint: 700,
+        settings: {
+          slidesToScroll: 4,
+          slidesToShow: 4,
+          dots: false,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToScroll: 3,
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToScroll: 2,
+          slidesToShow: 2,
+          dots: false,
+          arrows: false,
+          scrollLock: true,
+        },
+      },
+    ],
+  });
+});
 
+// form on modal
+$('#contact').submit(function (e) {
+  e.preventDefault();
 
-const changeImg = (x) => {
+  var $form = $(this);
+  $.post($form.attr('action'), $form.serialize()).then(function () {
+    window.location.href = 'www.google.com.br';
+  });
+});
 
-    let replacement = x.src.substr(44,6)
-
-    let newReplacement = replacement.replace(replacement[0],`${replacement[0]}-${replacement[0]}`)
-
-    let newSrc = x.src.replace(replacement,newReplacement)
-
-    if(newSrc.includes("proced") == true){
-
-        x.src = newSrc
-        
-
-    } else{
-
-        newSrc.replace("proced","cursos")
-
-        x.src = newSrc
-        
-    }
-    
-
-}
-
-
-
-const returnImg = (x) => {
-
-    console.log(x.src)
-
-    let srcSliced = x.src.slice(0,45)
-    console.log(srcSliced)
-    x.src = `${srcSliced}.jpeg`
-    
-    console.log(x.src)
-}
-
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus');
+});

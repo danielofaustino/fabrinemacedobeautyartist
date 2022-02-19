@@ -114,13 +114,17 @@ legend {
 }
 
 .testimonials .testimonial-item {
-  max-width: 18rem;
-  cursor: pointer;
+
+  padding: 20px 10px 20px 10px;
 }
 
 .testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+ /* From https://css.glass */
+background: rgba(52, 58, 64, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.2px);
+-webkit-backdrop-filter: blur(4.2px);
 }
 
 .footerlink {
@@ -165,7 +169,6 @@ legend {
 }
 
 .galeria {
-  border-radius: 10px;
   height: 500px;
 }
 
