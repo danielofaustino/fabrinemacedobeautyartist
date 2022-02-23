@@ -20,6 +20,10 @@ h6 {
   font-weight: 700;
 }
 
+a {
+  color: inherit;
+}
+
 legend {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -93,7 +97,7 @@ legend {
 }
 
 .showcase .showcase-text {
-  padding: 3rem;
+  padding: 1.5rem;
   text-align: justify;
 }
 
@@ -114,17 +118,26 @@ legend {
 }
 
 .testimonials .testimonial-item {
-
   padding: 20px 10px 20px 10px;
 }
 
+
 .testimonials .testimonial-item img {
- /* From https://css.glass */
-background: rgba(52, 58, 64, 0.11);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.2px);
--webkit-backdrop-filter: blur(4.2px);
+  /* From https://css.glass */
+  background: rgba(52, 58, 64, 0.11);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.2px);
+  -webkit-backdrop-filter: blur(4.2px);
+}
+
+.tertimonialsLink {
+  text-decoration: none;
+  color: var (--primary-color);
+}
+.tertimonialsLink :hover {
+  text-decoration: none;
+  color: var (--primary-color);
 }
 
 .footerlink {

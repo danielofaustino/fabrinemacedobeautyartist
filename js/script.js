@@ -22,7 +22,7 @@ window.addEventListener('load', function () {
     });
 
   window._ = new Glider(document.querySelector('.glider'), {
-    slidesToShow: 2,
+    slidesToShow: 1,
     slidesToScroll: 1,
     draggable: true,
     dots: '#dots',
@@ -34,33 +34,35 @@ window.addEventListener('load', function () {
       {
         breakpoint: 800,
         settings: {
-          slidesToScroll: 'auto',
-          itemWidth: 300,
-          slidesToShow: 'auto',
-          exactWidth: true,
+          slidesToScroll: 1,
+          slidesToShow: 5,
+          dots: false,
+          arrows: true,
         },
       },
       {
         breakpoint: 700,
         settings: {
-          slidesToScroll: 4,
+          slidesToScroll: 1,
           slidesToShow: 4,
-          dots: false,
-          arrows: false,
+          dots: true,
+          arrows: true,
         },
       },
       {
         breakpoint: 600,
         settings: {
-          slidesToScroll: 3,
-          slidesToShow: 3,
+          slidesToScroll: 1,
+          slidesToShow: 1,
+          dots: true,
+          arrows: true,
         },
       },
       {
         breakpoint: 500,
         settings: {
-          slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToScroll: 'auto',
+          slidesToShow: 'auto',
           dots: false,
           arrows: false,
           scrollLock: true,
