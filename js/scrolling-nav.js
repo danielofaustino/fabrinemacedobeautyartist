@@ -21,7 +21,7 @@
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
+  $('body').scrollTop({
     target: '#mainNav',
     offset: 56
   });
