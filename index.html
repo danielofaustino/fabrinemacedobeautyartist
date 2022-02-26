@@ -32,8 +32,6 @@
 </head>
 
 <body id="page-top" class="bg-dark">
-  <script id="CookieDeclaration" src="https://consent.cookiebot.com/6ae88611-604d-47a8-b18c-254a1640e08d/cd.js" type="text/javascript" async></script>
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#page-top"> <img src="img/logobranco.png" width="95" height="40" class="d-inline-block align-top" alt=""></a>
@@ -58,6 +56,9 @@
             
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" data-toggle="modal" data-target="#CookieModal">Cookies</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="https://www.instagram.com/fabrinemacedobeautyclinic/" target="_blank"><i class="bi bi-instagram"></i></a>
@@ -339,6 +340,24 @@
 
                     <input class="btn btn-secondary" type="submit" value="Enviar">
                 </form>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+         <!-- Cookie Modal -->
+         <div class="modal fade" id="CookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content bg-dark">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Cookie Modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <script id="CookieDeclaration" src="https://consent.cookiebot.com/6ae88611-604d-47a8-b18c-254a1640e08d/cd.js" type="text/javascript" async></script>
               </div>
               
             </div>
