@@ -130,6 +130,10 @@ legend {
   -webkit-backdrop-filter: blur(4.2px);
 }
 
+.feed-item {
+  height: auto;
+}
+
 .tertimonialsLink {
   text-decoration: none;
   color: var (--primary-color);
@@ -317,4 +321,7 @@ p {
   .box-cookies {
     flex-direction: column;
   }
+}
+
+.feed-item {
 }
