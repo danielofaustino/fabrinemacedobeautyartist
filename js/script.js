@@ -180,7 +180,7 @@ window.addEventListener('load', function () {
       return response.json();
     })
     .then((response) => {
-      console.log('feed data ', response.data);
+      //console.log('feed data ', response.data);
       response.data.map(function (feed) {
         if (feed.media_type == 'IMAGE') {
           let feedItem = document.createElement('div');
@@ -188,13 +188,17 @@ window.addEventListener('load', function () {
 
           let image = document.createElement('img');
           let paragraph = document.createElement('p');
+          let link = document.createElement('a');
+
+          link.href = `${feed.permalink}`;
           image.className = 'img-fluid mb-1';
           image.src = `${feed.media_url}`;
 
           paragraph.className = 'font-weight-light mb-0 px-2 py-4';
           paragraph.innerHTML = `${feed.caption}`;
+          link.appendChild(image);
 
-          feedItem.appendChild(image);
+          feedItem.appendChild(link);
           feedItem.appendChild(paragraph);
 
           feedDiv.appendChild(feedItem);
