@@ -45,7 +45,7 @@ window.addEventListener('load', function () {
         settings: {
           slidesToScroll: 1,
           slidesToShow: 4,
-          dots: true,
+          dots: false,
           arrows: true,
         },
       },
@@ -54,7 +54,7 @@ window.addEventListener('load', function () {
         settings: {
           slidesToScroll: 1,
           slidesToShow: 1,
-          dots: true,
+          dots: false,
           arrows: true,
         },
       },
@@ -109,6 +109,7 @@ window.addEventListener('load', function () {
           slidesToScroll: 'auto',
           itemWidth: 300,
           slidesToShow: 'auto',
+          dots: false,
           exactWidth: true,
         },
       },
@@ -126,6 +127,7 @@ window.addEventListener('load', function () {
         settings: {
           slidesToScroll: 3,
           slidesToShow: 3,
+          dots: false,
         },
       },
       {
@@ -186,10 +188,10 @@ window.addEventListener('load', function () {
 
           let image = document.createElement('img');
           let paragraph = document.createElement('p');
-          image.className = 'img-fluid mb-2';
+          image.className = 'img-fluid mb-1';
           image.src = `${feed.media_url}`;
 
-          paragraph.className = 'font-weight-light mb-0';
+          paragraph.className = 'font-weight-light mb-0 px-2 py-4';
           paragraph.innerHTML = `${feed.caption}`;
 
           feedItem.appendChild(image);
