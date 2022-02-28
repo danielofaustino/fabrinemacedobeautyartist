@@ -165,7 +165,7 @@ window.addEventListener('load', function () {
       console.log('Loaded');
     });
 
-  var feed = document.querySelector('#cursos > div > div > div ');
+  var feed = document.querySelector('#feedInstagram > div > div > div ');
   let token =
     'IGQVJXODRUSTdRRTRzOW15dUVZALVFqbHd1QzFLakFpN1YyUVVIWWJfWWlFRWNCMWQtWlhGRzdzOVRQb3RudnlTVFVmNlNLd2VqSWhPWFdIUk5LZA05QMVE4Ykh1S2xzcVBPTHVZAOXJhMzhNeUVxcEYydQZDZD';
   let tokenBeauty =
