@@ -171,7 +171,7 @@ window.addEventListener('load', function () {
   let tokenBeauty =
     'IGQVJVcldGdGNjODNUV05fU3U2WmdHVmlwNlo1UFhqQmt0TTBNOTZAUOUZAwOWs2bGtzallrNzBhS19jSThtdW83YXVnd1NCQXBvSWhFR1FrRnctSmM1WW9jRGQtYWVaVXludXhiRzBZAaVIzUnZAUaU1rbAZDZD';
 
-  let url = `https://graph.instagram.com/me/media?access+token=${tokenBeauty}&fields=media_url,media_type,caption,permalink&limit=5`;
+  let url = `https://graph.instagram.com/me/media?access+token=${tokenBeauty}&fields=media_url,media_type,caption,permalink&limit=10`;
 
   const feedDiv = document.createDocumentFragment();
 
