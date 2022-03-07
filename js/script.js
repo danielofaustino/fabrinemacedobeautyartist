@@ -53,7 +53,7 @@ window.addEventListener('load', function () {
         breakpoint: 600,
         settings: {
           slidesToScroll: 1,
-          slidesToShow: 1,
+          slidesToShow: 2,
           dots: false,
           arrows: true,
         },
@@ -61,8 +61,18 @@ window.addEventListener('load', function () {
       {
         breakpoint: 500,
         settings: {
-          slidesToScroll: 'auto',
-          slidesToShow: 'auto',
+          slidesToScroll: 1,
+          slidesToShow: 2,
+          dots: false,
+          arrows: false,
+          scrollLock: true,
+        },
+      },
+      {
+        breakpoint: 400,
+        settings: {
+          slidesToScroll: 1,
+          slidesToShow: 2,
           dots: false,
           arrows: false,
           scrollLock: true,
