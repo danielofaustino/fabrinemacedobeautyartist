@@ -58,7 +58,8 @@ legend {
 
 @media (max-width: 576px) {
   .carousel {
-    margin-top: 19.5%;
+    margin-top: 18%;
+    margin-bottom: 5%;
   }
   .mb-5 {
     font-size: large;
@@ -78,7 +79,21 @@ legend {
 
 @media (min-width: 1440px) {
   .carousel {
-    margin-top: 5.5%;
+    margin-top: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel {
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+}
+
+@media (min-width: 820px) {
+  .carousel {
+    margin-top: 6%;
+    margin-bottom: 5%;
   }
 }
 
@@ -322,5 +337,3 @@ p {
     flex-direction: column;
   }
 }
-
-
